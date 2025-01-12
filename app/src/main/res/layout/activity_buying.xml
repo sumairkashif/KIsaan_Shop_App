@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SELL_BUY_Activities.Buying_Act">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        app:cardCornerRadius="5sp"
+        android:layout_marginTop="45sp"
+        app:cardElevation="18sp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_2"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/summ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                android:fontFamily="serif-monospace"
+                android:shadowColor="#121111"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="7"
+                android:text="Select Here"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What you want to Sell "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#302929"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fram2"
+        android:layout_marginTop="4sp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="10sp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="18sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="230sp"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        android:layout_marginLeft="20sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/anaj_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15sp"
+                        android:text="Crops"
+                        android:textColor="#000000"
+                        android:textSize="27sp"
+                        android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/crop_img"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25sp"
+                        android:background="@drawable/rounded_border"
+                        android:padding="2sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right_arrow" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="18sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="230sp"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        android:layout_marginLeft="20sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15sp"
+                        android:text="Fertilizer"
+                        android:textColor="#000000"
+                        android:textSize="27sp"
+                        android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/fert_img"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25sp"
+                        android:background="@drawable/rounded_border"
+                        android:padding="2sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right_arrow" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="18sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="230sp"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        android:layout_marginLeft="20sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15sp"
+                        android:text="Pesticides"
+                        android:textColor="#000000"
+                        android:textSize="27sp"
+                        android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/pest_img"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25sp"
+                        android:background="@drawable/rounded_border"
+                        android:padding="2sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right_arrow" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="18sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="230sp"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        android:layout_marginLeft="20sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15sp"
+                        android:text="Seeds"
+                        android:textColor="#000000"
+                        android:textSize="27sp"
+                        android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/seed_img"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25sp"
+                        android:background="@drawable/rounded_border"
+                        android:padding="2sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right_arrow" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="18sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="230sp"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        android:layout_marginLeft="20sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15sp"
+                        android:text="Milk"
+                        android:textColor="#000000"
+                        android:textSize="27sp"
+                        android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/milk_img"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25sp"
+                        android:background="@drawable/rounded_border"
+                        android:padding="5sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/right_arrow" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".user_admin">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cart_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_margin="30sp"
+        android:background="#1E1D1D"
+        app:cardBackgroundColor="#171616"
+        app:cardCornerRadius="30sp"
+        app:cardElevation="8sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5sp"
+                android:padding="5sp"
+                android:text="PAYMENT"
+                android:textColor="#E1E0E0"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="_______________________________" />
+
+            <LinearLayout
+                android:id="@+id/usama"
+                android:layout_width="300sp"
+                android:layout_height="400sp"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5sp"
+                    android:text="Enter Amount"
+                    android:textColor="#E1E0E0"
+                    android:textSize="22sp" />
+
+                <EditText
+                    android:id="@+id/amount_enter"
+                    android:layout_width="145sp"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.4"
+                    android:background="@drawable/editt"
+                    android:hint="amount"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="#EFC621"
+                    android:textColorLink="#AE3232"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/check_btn"
+                    android:layout_width="145sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30sp"
+                    android:alpha="0.6"
+                    android:background="@drawable/editt"
+                    android:text="Check bill"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/total_price"
+                    android:layout_width="145sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:alpha="0.4"
+                    android:background="@drawable/editt"
+                    android:hint="0000"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12sp"
+                    android:text="_______________________________" />
+
+
+                <Button
+                    android:id="@+id/pay_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30sp"
+                    android:backgroundTint="#000000"
+                    android:rotation="0"
+                    android:rotationX="0"
+                    android:rotationY="0"
+                    android:text="PAY"
+                    android:textColor="#FFFA02"
+                    android:textSize="26sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SELL_BUY_Activities.Selling_Act">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            app:cardCornerRadius="5sp"
+            app:cardElevation="18sp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_2"
+                android:scaleType="fitXY"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/summ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="20dp"
+                    android:fontFamily="serif-monospace"
+                    android:shadowColor="#121111"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="7"
+                    android:text="Select Here"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What you want to Buy "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="#302929"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fram333"
+        android:layout_marginTop="4sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60sp"
+                    android:text="Select One"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"/>
+            </LinearLayout>
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:backgroundTint="@color/black"
+                >
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.recyclerview.widget.RecyclerView
+
+                        android:id="@+id/recyclerview5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:listitem="@layout/sample_recyclerview" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+<!--    <RelativeLayout-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@color/black"-->
+<!--        android:backgroundTint="@color/black"-->
+<!--        android:id="@+id/fram333">-->
+
+<!--        <LinearLayout-->
+
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+
+<!--                android:id="@+id/recyclerview5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                tools:listitem="@layout/sample_recyclerview" />-->
+
+<!--        </LinearLayout>-->
+<!--    </RelativeLayout>-->
+
+
+</LinearLayout>
